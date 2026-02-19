@@ -13,8 +13,8 @@ export default function HeroSection() {
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setBooks((prev) => (prev < 10 ? prev + 1 : 10));
-      setMembers((prev) => (prev < 150 ? prev + 2 : 150));
+      setBooks((prev) => (prev < 50 ? prev + 1 : 50));
+      setMembers((prev) => (prev < 500 ? prev + 10 : 500));
       setEvents((prev) => (prev < 15 ? prev + 1 : 15));
     }, 50);
     return () => clearInterval(interval);

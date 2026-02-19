@@ -21,10 +21,10 @@ const objectives = [
 ];
 
 const stats = [
-  { number: '150+', label: 'Active Members' },
+  { number: '500+', label: 'Active Members' },
   { number: '15+', label: 'Events Hosted' },
   { number: '20+', label: 'Library Partnerships' },
-  { number: '10+', label: 'Books Discussed' },
+  { number: '50+', label: 'Books Discussed' },
 ];
 
 export default function About() {

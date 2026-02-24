@@ -2,6 +2,7 @@ import { BookOpen, Target, Eye, Users, Award, Calendar, Globe, Heart, Sparkles }
 import { motion } from 'framer-motion';
 import heroBackground from '@/assets/hero-background.jpg';
 import { Button } from '@/components/ui/button';
+import { Link } from "react-router-dom";
 
 const timeline = [
   { year: '2023', title: 'Club Foundation', description: 'Started as a passionate circle of readers exploring classics and modern works.' },
@@ -21,7 +22,7 @@ const objectives = [
 ];
 
 const stats = [
-  { number: '500+', label: 'Active Members' },
+  { number: '700+', label: 'Active Members' },
   { number: '15+', label: 'Events Hosted' },
   { number: '20+', label: 'Library Partnerships' },
   { number: '50+', label: 'Books Discussed' },
@@ -68,8 +69,17 @@ export default function About() {
             animate={{ opacity: 1 }}
             transition={{ delay: 0.4 }}
           >
-            <Button className="bg-black text-white px-8 py-4 shadow-lg hover:scale-105 transition">Join Us</Button>
-            <Button className="border border-white/50 text-white px-8 py-4 hover:bg-white/10 transition">Explore Events</Button>
+            <Button className="bg-black text-white px-8 py-4 shadow-lg hover:scale-105 transition">
+              <a 
+    href="https://forms.gle/CZnhUrLXpedTba5T6" 
+    target="_blank" 
+    rel="noopener noreferrer"
+  >
+              Join Us
+              </a></Button>
+              
+            <Button className="border border-white/50 text-white px-8 py-4 hover:bg-white/10 transition">
+            <Link to="/events">Explore Events</Link></Button>
           </motion.div>
         </div>
       </section>
